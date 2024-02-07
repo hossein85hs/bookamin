@@ -43,7 +43,7 @@
 						<a class="navbar-brand logo" href="#">
 							Bookamin
 						 </a>
-							<li class="nav-item"><a href="/hosseinphp" class="nav-link active">خانه</a></li>
+							<li class="nav-item"><a href="./" class="nav-link active">خانه</a></li>
 							<li class="li-menu nav-item dropdown">
 							<a href="?page=book" class="li-menu-a nav-link dropdown-toggle dropdownmain">
 								کتاب ها
