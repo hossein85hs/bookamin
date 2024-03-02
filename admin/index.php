@@ -1,5 +1,5 @@
 <?php
-include_once "../config.php";
+include_once "../config/config.php";
 require_once "../library/library.php";
 include_once 'header.php';
 
@@ -9,7 +9,7 @@ if(isset($_SESSION['is_login'])){
         <div class="col-lg-3  col-md-3  col-sm-3 col-12 col-xs-12" >
             <?php include_once 'menu.php' ?>
         </div>
-        <div class='col-lg-9 col-md-9 col-sm-9   col-xs-12'>
+        <div class='col-lg-9 col-md-9 col-sm-9  mt-3 col-xs-12'>
             <?php
             if(isset($_GET['page'])){
                 $page = $_GET['page'];

@@ -17,9 +17,9 @@
     <div class="row  align-items-center h-75">
         <ul class="navbar-nav w-100 col ">
             <a href="?page=article"><li class="nav-item">مقالات</li></a>
-            <a href="?pages=article"><li class="nav-item">article</li></a>
-            <a href="?pages=article"><li class="nav-item">article</li></a>
-            <a href="?pages=article"><li class="nav-item">article</li></a>
+            <a href="?page=form_article"><li class="nav-item">ثبت مقاله</li></a>
+            <a href="?page=article"><li class="nav-item">اطلاعات کاربری</li></a>
+            <a href="?page=article"><li class="nav-item">خروج</li></a>
         </ul>
     </div>
 

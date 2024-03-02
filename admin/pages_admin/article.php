@@ -1,5 +1,11 @@
+<?php
+    $user_id= $_SESSION['user_id'];
+    $sql =" SELECT * FROM `article` WHERE `fk_users_id` = '$user_id' ORDER BY `id` DESC ";
+    $result = $connection->query($sql);
 
-<div class="row  mt-3">
+?>
+
+<div class="row  ">
     <div class="shadow w-100 card">
         <div class="card-body">
             <h3 class="card-title h5">فهرست مقالات</h3>
@@ -10,28 +16,25 @@
                     <th>عنوان</th>
                     <th>تاریخ ثبت</th>
 
+                    
                     <th>عملیات</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                </tr>
+                <?php
+                while($row = $result->fetch(PDO::FETCH_ASSOC)){
+                    ?>
+                    <tr>
+                        <td><?= $row['id'] ?></td>
+                        <td><?= $row['title'] ?></td>
+                        <td><?= $row['publish_date']?></td>
+                        <td><a class="btn btn-sm btn-danger" href="#">حذف</a></td>
+                    </tr>
+                    <?php
+                };
+                ?>
+
+
                 </tbody>
             </table>
         </div>

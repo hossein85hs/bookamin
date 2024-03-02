@@ -1,5 +1,5 @@
 <?php
-	include_once "config.php";
+	include_once "./config/config.php";
 	require_once "./library/library.php";
 	include_once "header.php";
 ?>	
