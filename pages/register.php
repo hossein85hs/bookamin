@@ -1,4 +1,5 @@
-<div class="container col-lg-3 col-costom col-md-5	 col-sm-8 col-10  d-flex flex-column align-items-center justify-content-center ">
+<div class="container col-lg-3 col-costom col-md-5	 col-sm-8 col-10  d-flex flex-column
+align-items-center  justify-content-center ">
 
 	<form class="form-control bg-light mt-5  form-horizontal h-75" method="post" action="" >
 

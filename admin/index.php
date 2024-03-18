@@ -11,6 +11,14 @@ if(isset($_SESSION['is_login'])){
         </div>
         <div class='col-lg-9 col-md-9 col-sm-9  mt-3 col-xs-12'>
             <?php
+            if(isset($_GET['action'])){
+                $action = $_GET['action'];
+                if($action == 'logout'){
+                    session_destroy();
+                    header('location:'.BASE_URL);
+                    exit();
+                }
+            }
             if(isset($_GET['page'])){
                 $page = $_GET['page'];
                 $directory = 'pages_admin/' . $page . '.php';

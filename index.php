@@ -13,6 +13,8 @@
 		}else{
 			include_once "pages/404.php";
 		}
+	}else{
+		include_once 'pages/main.php';
 	}
 ?>
 <?php

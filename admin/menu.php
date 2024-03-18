@@ -19,7 +19,7 @@
             <a href="?page=article"><li class="nav-item">مقالات</li></a>
             <a href="?page=form_article"><li class="nav-item">ثبت مقاله</li></a>
             <a href="?page=article"><li class="nav-item">اطلاعات کاربری</li></a>
-            <a href="?page=article"><li class="nav-item">خروج</li></a>
+            <a href="?action=logout"><li class="nav-item">خروج</li></a>
         </ul>
     </div>
 

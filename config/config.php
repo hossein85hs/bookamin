@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+define('BASE_URL','http://localhost/bookamin/');
+define('BASE_DIR',__DIR__);
 
 $host = "localhost";
 $dbname = "bookamin";
